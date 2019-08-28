@@ -1,0 +1,814 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Redis的使用 · 思讯</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="clare">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="mybatis-plus.html" />
+    
+    
+    <link rel="prev" href="grpc.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    基础环境搭建
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="dev.html">
+            
+                <a href="dev.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    JAVA开发环境的搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    基础平台
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="grpc.html">
+            
+                <a href="grpc.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    GRPC的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="redis.html">
+            
+                <a href="redis.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Redis的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="mybatis-plus.html">
+            
+                <a href="mybatis-plus.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Mybatis-plus的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="kafka.html">
+            
+                <a href="kafka.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    Kafka的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="rabiit.html">
+            
+                <a href="rabiit.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    RabbitMQ的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="mongo.html">
+            
+                <a href="mongo.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    MogoDB的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="sharding-jdbc.html">
+            
+                <a href="sharding-jdbc.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    Sharding-Jdbc的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    开发规范
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="mock.html">
+            
+                <a href="mock.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    测试驱动开发(TDD)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="validate.html">
+            
+                <a href="validate.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    数据校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../standard/swagger2.html">
+            
+                <a href="../standard/swagger2.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    Swagger2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../standard/logging.html">
+            
+                <a href="../standard/logging.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    日志记录及GELF的集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    帮助文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../ops/use_dns.html">
+            
+                <a href="../ops/use_dns.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    本地开发环境增加默认搜索域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    运维操作手册
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../ops/standard.html">
+            
+                <a href="../ops/standard.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    系统标准化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../ops/yum.html">
+            
+                <a href="../ops/yum.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    本地YUM源搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../ops/k8s-node.html">
+            
+                <a href="../ops/k8s-node.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    阿里云K8S主机标准化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../ops/gitlab-ci.html">
+            
+                <a href="../ops/gitlab-ci.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    GitLabCI/CD环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                        <b>1.7.</b>
+                    
+                    基础服务信息
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../serviceinfo/dev.html">
+            
+                <a href="../serviceinfo/dev.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    本地开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../serviceinfo/test.html">
+            
+                <a href="../serviceinfo/test.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    阿里测试环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../serviceinfo/dev.html">
+            
+                <a href="../serviceinfo/dev.html">
+            
+                    
+                        <b>1.7.3.</b>
+                    
+                    测试CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Redis的使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#redis&#x7684;&#x4F7F;&#x7528;"><b>1. </b>Redis&#x7684;&#x4F7F;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b>1.1. </b>&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#redis-&#x4F18;&#x52BF;"><b>1.2. </b>Redis &#x4F18;&#x52BF;</a></li><li><span class="title-icon "></span><a href="#redis&#x7684;&#x4F7F;&#x7528;_1"><b>1.3. </b>Redis&#x7684;&#x4F7F;&#x7528;</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;redis&#x6CE8;&#x89E3;&#x65B9;&#x5F0F;&#x63D2;&#x5165;&#x7F13;&#x5B58;"><b>1.3.1. </b>&#x4F7F;&#x7528;Redis&#x6CE8;&#x89E3;&#x65B9;&#x5F0F;&#x63D2;&#x5165;&#x7F13;&#x5B58;</a></li></ul></ul></ul></div><a href="#redis&#x7684;&#x4F7F;&#x7528;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="redis&#x7684;&#x4F7F;&#x7528;"><a name="redis&#x7684;&#x4F7F;&#x7528;" class="anchor-navigation-ex-anchor" href="#redis&#x7684;&#x4F7F;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>1. Redis&#x7684;&#x4F7F;&#x7528;</h1>
+<h2 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x7B80;&#x4ECB;</h2>
+<p>Redis &#x662F;&#x5B8C;&#x5168;&#x5F00;&#x6E90;&#x514D;&#x8D39;&#x7684;&#xFF0C;&#x9075;&#x5B88;BSD&#x534F;&#x8BAE;&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x9AD8;&#x6027;&#x80FD;&#x7684;key-value&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>Redis &#x4E0E;&#x5176;&#x4ED6; key - value &#x7F13;&#x5B58;&#x4EA7;&#x54C1;&#x6709;&#x4EE5;&#x4E0B;&#x4E09;&#x4E2A;&#x7279;&#x70B9;&#xFF1A;</p>
+<ul>
+<li>Redis&#x652F;&#x6301;&#x6570;&#x636E;&#x7684;&#x6301;&#x4E45;&#x5316;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5728;&#x78C1;&#x76D8;&#x4E2D;&#xFF0C;&#x91CD;&#x542F;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x518D;&#x6B21;&#x52A0;&#x8F7D;&#x8FDB;&#x884C;&#x4F7F;&#x7528;&#x3002;</li>
+<li>Redis&#x4E0D;&#x4EC5;&#x4EC5;&#x652F;&#x6301;&#x7B80;&#x5355;&#x7684;key-value&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x63D0;&#x4F9B;list&#xFF0C;set&#xFF0C;zset&#xFF0C;hash&#x7B49;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x5B58;&#x50A8;&#x3002;</li>
+<li>Redis&#x652F;&#x6301;&#x6570;&#x636E;&#x7684;&#x5907;&#x4EFD;&#xFF0C;&#x5373;master-slave&#x6A21;&#x5F0F;&#x7684;&#x6570;&#x636E;&#x5907;&#x4EFD;&#x3002;</li>
+</ul>
+<p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6b/Redis_Logo.svg/1200px-Redis_Logo.svg.png" alt="redis"></p>
+<h2 id="redis-&#x4F18;&#x52BF;"><a name="redis-&#x4F18;&#x52BF;" class="anchor-navigation-ex-anchor" href="#redis-&#x4F18;&#x52BF;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Redis &#x4F18;&#x52BF;</h2>
+<ul>
+<li>&#x6027;&#x80FD;&#x6781;&#x9AD8; &#x2013; Redis&#x80FD;&#x8BFB;&#x7684;&#x901F;&#x5EA6;&#x662F;110000&#x6B21;/s,&#x5199;&#x7684;&#x901F;&#x5EA6;&#x662F;81000&#x6B21;/s &#x3002;</li>
+<li>&#x4E30;&#x5BCC;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B; &#x2013; Redis&#x652F;&#x6301;&#x4E8C;&#x8FDB;&#x5236;&#x6848;&#x4F8B;&#x7684; Strings, Lists, Hashes, Sets &#x53CA; Ordered Sets &#x6570;&#x636E;&#x7C7B;&#x578B;&#x64CD;&#x4F5C;&#x3002;</li>
+<li>&#x539F;&#x5B50; &#x2013; Redis&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x539F;&#x5B50;&#x6027;&#x7684;&#xFF0C;&#x610F;&#x601D;&#x5C31;&#x662F;&#x8981;&#x4E48;&#x6210;&#x529F;&#x6267;&#x884C;&#x8981;&#x4E48;&#x5931;&#x8D25;&#x5B8C;&#x5168;&#x4E0D;&#x6267;&#x884C;&#x3002;&#x5355;&#x4E2A;&#x64CD;&#x4F5C;&#x662F;&#x539F;&#x5B50;&#x6027;&#x7684;&#x3002;&#x591A;&#x4E2A;&#x64CD;&#x4F5C;&#x4E5F;&#x652F;&#x6301;&#x4E8B;&#x52A1;&#xFF0C;&#x5373;&#x539F;&#x5B50;&#x6027;&#xFF0C;&#x901A;&#x8FC7;MULTI&#x548C;EXEC&#x6307;&#x4EE4;&#x5305;&#x8D77;&#x6765;&#x3002;</li>
+<li>&#x4E30;&#x5BCC;&#x7684;&#x7279;&#x6027; &#x2013; Redis&#x8FD8;&#x652F;&#x6301; publish/subscribe, &#x901A;&#x77E5;, key &#x8FC7;&#x671F;&#x7B49;&#x7B49;&#x7279;&#x6027;&#x3002;</li>
+</ul>
+<h2 id="redis&#x7684;&#x4F7F;&#x7528;_1"><a name="redis&#x7684;&#x4F7F;&#x7528;_1" class="anchor-navigation-ex-anchor" href="#redis&#x7684;&#x4F7F;&#x7528;_1"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Redis&#x7684;&#x4F7F;&#x7528;</h2>
+<p>&#x672C;&#x7AE0;&#x4ECB;&#x7ECD;&#x5982;&#x4F55;&#x4F7F;&#x7528;<code>SpringBoot</code> &#x5BF9;redis&#x7684;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>&#x6DFB;&#x52A0;redis&#x7684; starter &#x4FEE;&#x6539;pom.xml</p>
+<pre class="language-"><code class="lang-xml">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>cn.com.siss<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>spring-boot-starter-redis<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>${starters.version}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x6DFB;&#x52A0;<code>application.yml</code>&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<p>&#x5355;&#x8282;&#x70B9;redis</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">profiles</span><span class="token punctuation">:</span>
+    <span class="token key atrule">include</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> redis
+<span class="token key atrule">app</span><span class="token punctuation">:</span>
+  <span class="token key atrule">redis</span><span class="token punctuation">:</span>
+    <span class="token key atrule">host</span><span class="token punctuation">:</span> redis<span class="token punctuation">-</span>dev<span class="token punctuation">-</span><span class="token number">3 </span><span class="token comment"># redis &#x670D;&#x52A1;&#x7AEF;ip&#x5730;&#x5740;</span>
+    <span class="token key atrule">password</span><span class="token punctuation">:</span> redis.123 <span class="token comment"># redis &#x767B;&#x5F55;&#x5BC6;&#x7801;</span>
+</code></pre>
+<p>&#x54E8;&#x5175;&#x6A21;&#x5F0F;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">app</span><span class="token punctuation">:</span>
+  <span class="token key atrule">redis</span><span class="token punctuation">:</span>
+    <span class="token key atrule">password</span><span class="token punctuation">:</span> redis.123
+    <span class="token key atrule">nodes</span><span class="token punctuation">:</span> redis<span class="token punctuation">-</span>dev<span class="token punctuation">-</span>1<span class="token punctuation">:</span><span class="token number">26379</span><span class="token punctuation">,</span>redis<span class="token punctuation">-</span>dev<span class="token punctuation">-</span>2<span class="token punctuation">:</span><span class="token number">26379</span><span class="token punctuation">,</span>redis<span class="token punctuation">-</span>dev<span class="token punctuation">-</span>3<span class="token punctuation">:</span><span class="token number">26379</span>
+<span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">profiles</span><span class="token punctuation">:</span>
+    <span class="token key atrule">include</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> redis<span class="token punctuation">-</span>sentry
+</code></pre>
+<p>&#x6DFB;&#x52A0;string&#x7C7B;&#x578B; &#x9996;&#x5148;&#x901A;&#x8FC7;&#x6CE8;&#x89E3;<code>@Autowired</code> &#x6CE8;&#x5165;redisTemplate.
+RedisTemplateUtil.set(redisTemplate, &quot;p&quot;, &quot;{\&quot;a\&quot;: \&quot;b\&quot;}&quot;, 3600L);
+&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x4E3A;<code>key</code> &#x7B2C;&#x4E09;&#x4E2A;&#x4E3A;<code>value</code> &#x6700;&#x540E;&#x4E00;&#x4F4D;&#x4E3A;&#x5931;&#x6548;&#x65F6;&#x95F4;<code>expireTime</code></p>
+<pre class="language-"><code class="lang-java"><span class="token annotation punctuation">@RestController</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">HelloWorld</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> <span class="token class-name">RedisTemplate</span> redisTemplate<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">&quot;/set/redis&quot;</span><span class="token punctuation">,</span> method <span class="token operator">=</span> <span class="token class-name">RequestMethod</span><span class="token punctuation">.</span>GET<span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token class-name">Boolean</span> <span class="token function">setRedis</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;controller set method&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">boolean</span> a <span class="token operator">=</span> <span class="token class-name">RedisTemplateUtil</span><span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span>redisTemplate<span class="token punctuation">,</span> <span class="token string">&quot;p&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;{\&quot;a\&quot;: \&quot;b\&quot;}&quot;</span><span class="token punctuation">,</span> <span class="token number">3600L</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> a<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x4FEE;&#x6539;&#x6570;&#x636E;&#x5E93; redis&#x9ED8;&#x8BA4;&#x6709;16&#x4E2A;&#x6570;&#x636E;&#x5E93; &#x901A;&#x8FC7;jedis&#x6765;&#x5207;&#x6362;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre class="language-"><code class="lang-java">        <span class="token class-name">JedisConnectionFactory</span> jedisConnectionFactory <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token class-name">JedisConnectionFactory</span><span class="token punctuation">)</span> redisTemplate<span class="token punctuation">.</span><span class="token function">getConnectionFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        jedisConnectionFactory<span class="token punctuation">.</span><span class="token function">setDatabase</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x63D2;&#x5165;hash</p>
+<pre class="language-"><code class="lang-java">    <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">checkoutSetHmKey</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">HashOperations</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">,</span> <span class="token class-name">Object</span><span class="token punctuation">&gt;</span></span> hash <span class="token operator">=</span> redisTemplate<span class="token punctuation">.</span><span class="token function">opsForHash</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">Map</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">&gt;</span></span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">&gt;</span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        map<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        hash<span class="token punctuation">.</span><span class="token function">putAll</span><span class="token punctuation">(</span><span class="token string">&quot;124242114234214123412&quot;</span><span class="token punctuation">,</span> map<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">RedisTemplateUtil</span><span class="token punctuation">.</span><span class="token function">hmSet</span><span class="token punctuation">(</span>redisTemplate<span class="token punctuation">,</span> <span class="token string">&quot;s&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;a&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<h3 id="&#x4F7F;&#x7528;redis&#x6CE8;&#x89E3;&#x65B9;&#x5F0F;&#x63D2;&#x5165;&#x7F13;&#x5B58;"><a name="&#x4F7F;&#x7528;redis&#x6CE8;&#x89E3;&#x65B9;&#x5F0F;&#x63D2;&#x5165;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;redis&#x6CE8;&#x89E3;&#x65B9;&#x5F0F;&#x63D2;&#x5165;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3.1. &#x4F7F;&#x7528;Redis&#x6CE8;&#x89E3;&#x65B9;&#x5F0F;&#x63D2;&#x5165;&#x7F13;&#x5B58;</h3>
+<p>&#x5F00;&#x542F;&#x6CE8;&#x91CA;&#x65B9;&#x5F0F;&#x7684;redis</p>
+<pre class="language-"><code class="lang-java"><span class="token annotation punctuation">@SpringBootApplication</span>
+<span class="token annotation punctuation">@EnableCaching</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">SpringBootStarterRedisApplication</span> <span class="token punctuation">{</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">SpringApplication</span><span class="token punctuation">.</span><span class="token function">run</span><span class="token punctuation">(</span><span class="token class-name">SpringBootStarterRedisApplication</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">,</span> args<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<pre class="language-"><code>cacheNames = &quot;product&quot;   //&#x7F13;&#x5B58;&#x540D;
+
+key = &quot;&#x56FA;&#x5B9A;&#x503C;&quot; &#x6216;  key = &quot;#sellerid&quot;(&#x53EF;&#x53D8;&#x5316;&#x7684;&#x503C;)  //redis&#x7F13;&#x5B58;&#x4E2D;&#x7684;key
+
+condition = &quot;#sellerid.length &gt; 10&quot;   //&#x91CC;&#x9762;&#x586B;&#x5199;&#x8868;&#x8FBE;&#x5F0F;&#xFF0C;true&#x8868;&#x793A;&#x8FDB;&#x884C;&#x7F13;&#x5B58;&#xFF0C;false&#x8868;&#x793A;&#x4E0D;&#x8FDB;&#x884C;&#x7F13;&#x5B58;
+
+unless = &quot;#result.getCode() != 0&quot;   //&#x548C;&#x4EE5;&#x4E0A;&#x76F8;&#x53CD;&#xFF0C;&#x5F53;&#x4E3A;false&#x65F6;&#x8FDB;&#x884C;&#x7F13;&#x5B58;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x8FDB;&#x884C;&#x7F13;&#x5B58;
+</code></pre><p>&#x4F7F;&#x7528;&#x6CE8;&#x89E3;&#x7684;&#x65B9;&#x5F0F;&#x66F4;&#x65B0;&#x7F13;&#x5B58;</p>
+<pre class="language-"><code class="lang-java"><span class="token annotation punctuation">@Cacheable</span><span class="token punctuation">(</span>value<span class="token operator">=</span><span class="token string">&quot;user&quot;</span><span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token string">&quot;&apos;users_&apos;+#id&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token class-name">User</span> <span class="token function">redis</span><span class="token punctuation">(</span><span class="token class-name">Long</span> id<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token class-name">User</span> user <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    user<span class="token punctuation">.</span><span class="token function">setUsername</span><span class="token punctuation">(</span><span class="token string">&quot;hlhdidi&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    user<span class="token punctuation">.</span><span class="token function">setPassword</span><span class="token punctuation">(</span><span class="token string">&quot;123&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    user<span class="token punctuation">.</span><span class="token function">setUid</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    user<span class="token punctuation">.</span><span class="token function">setId</span><span class="token punctuation">(</span><span class="token number">1L</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;log4j2&#x574F;&#x5566;?&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> user<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>@CacheEvict &#x5220;&#x9664;&#x7F13;&#x5B58;  </p>
+<p>allEntries = false  &#x6E05;&#x7A7A;product&#x91CC;&#x9762;&#x7684;&#x6240;&#x6709;&#x5236;</p>
+<p>allEntries = true  &#x9ED8;&#x8BA4;&#x503C;&#xFF0C;&#x5220;&#x9664;key&#x5BF9;&#x5E94;&#x7684;&#x503C;</p>
+<pre class="language-"><code class="lang-java"><span class="token annotation punctuation">@CacheEvict</span><span class="token punctuation">(</span>value<span class="token operator">=</span><span class="token string">&quot;thisredis&quot;</span><span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token string">&quot;&apos;users_&apos;+#id&quot;</span><span class="token punctuation">,</span>condition<span class="token operator">=</span><span class="token string">&quot;#id!=1&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">delUser</span><span class="token punctuation">(</span><span class="token class-name">Integer</span> id<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// &#x5220;&#x9664;user</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;user&#x5220;&#x9664;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>@CachePut</p>
+<p>&#x6BCF;&#x6B21;&#x6267;&#x884C;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#x65B9;&#x6CD5;&#xFF0C;&#x65E0;&#x8BBA;&#x7F13;&#x5B58;&#x91CC;&#x662F;&#x5426;&#x6709;&#x503C;&#xFF0C;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x65B0;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x7684;&#x66FF;&#x6362;&#x7F13;&#x5B58;&#x4E2D;&#x7684;&#x503C;&#x3002;&#x8FD9;&#x91CC;&#x4E0D;&#x540C;&#x4E8E;@Cacheable&#xFF1A;@Cacheable&#x5982;&#x679C;&#x7F13;&#x5B58;&#x6CA1;&#x6709;&#x503C;&#xFF0C;&#x4ECE;&#x5219;&#x6267;&#x884C;&#x65B9;&#x6CD5;&#x5E76;&#x7F13;&#x5B58;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x7F13;&#x5B58;&#x6709;&#x503C;&#xFF0C;&#x5219;&#x4ECE;&#x7F13;&#x5B58;&#x4E2D;&#x83B7;&#x53D6;&#x503C;</p>
+<p>@CacheConfig</p>
+<p>@CacheConfig: &#x7C7B;&#x7EA7;&#x522B;&#x7684;&#x6CE8;&#x89E3;&#xFF1A;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;&#x6B64;&#x6CE8;&#x89E3;&#x4E2D;&#x5B9A;&#x4E49;cacheNames&#xFF0C;&#x5219;&#x6B64;&#x7C7B;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x4E0A; @Cacheable&#x7684;cacheNames&#x9ED8;&#x8BA4;&#x90FD;&#x662F;&#x6B64;&#x503C;&#x3002;&#x5F53;&#x7136;@Cacheable&#x4E5F;&#x53EF;&#x4EE5;&#x91CD;&#x5B9A;&#x4E49;cacheNames&#x7684;&#x503C;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="grpc.html" class="navigation navigation-prev " aria-label="Previous page: GRPC的使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="mybatis-plus.html" class="navigation navigation-next " aria-label="Next page: Mybatis-plus的使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Redis的使用","level":"1.3.2","depth":2,"next":{"title":"Mybatis-plus的使用","level":"1.3.3","depth":2,"path":"basics/mybatis-plus.md","ref":"basics/mybatis-plus.md","articles":[]},"previous":{"title":"GRPC的使用","level":"1.3.1","depth":2,"path":"basics/grpc.md","ref":"basics/grpc.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-donate","splitter","anchor-navigation-ex","-sharing","sharing-plus","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"styles":{"website":"styles/website.css"},"github":{"url":"https://github.com/ClareChu"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["weibo","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"clare","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"思讯","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3","description":""},"file":{"path":"basics/redis.md","mtime":"2019-08-28T16:53:46.171Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-28T17:07:01.089Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

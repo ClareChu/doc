@@ -1,0 +1,757 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Kafka的使用 · 思讯</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="clare">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rabiit.html" />
+    
+    
+    <link rel="prev" href="mybatis-plus.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    基础环境搭建
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="dev.html">
+            
+                <a href="dev.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    JAVA开发环境的搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    基础平台
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="grpc.html">
+            
+                <a href="grpc.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    GRPC的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="redis.html">
+            
+                <a href="redis.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Redis的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="mybatis-plus.html">
+            
+                <a href="mybatis-plus.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Mybatis-plus的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="kafka.html">
+            
+                <a href="kafka.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    Kafka的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="rabiit.html">
+            
+                <a href="rabiit.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    RabbitMQ的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="mongo.html">
+            
+                <a href="mongo.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    MogoDB的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="sharding-jdbc.html">
+            
+                <a href="sharding-jdbc.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    Sharding-Jdbc的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    开发规范
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="mock.html">
+            
+                <a href="mock.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    测试驱动开发(TDD)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="validate.html">
+            
+                <a href="validate.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    数据校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../standard/swagger2.html">
+            
+                <a href="../standard/swagger2.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    Swagger2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../standard/logging.html">
+            
+                <a href="../standard/logging.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    日志记录及GELF的集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    帮助文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../ops/use_dns.html">
+            
+                <a href="../ops/use_dns.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    本地开发环境增加默认搜索域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    运维操作手册
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../ops/standard.html">
+            
+                <a href="../ops/standard.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    系统标准化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../ops/yum.html">
+            
+                <a href="../ops/yum.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    本地YUM源搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../ops/k8s-node.html">
+            
+                <a href="../ops/k8s-node.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    阿里云K8S主机标准化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../ops/gitlab-ci.html">
+            
+                <a href="../ops/gitlab-ci.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    GitLabCI/CD环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                        <b>1.7.</b>
+                    
+                    基础服务信息
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../serviceinfo/dev.html">
+            
+                <a href="../serviceinfo/dev.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    本地开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../serviceinfo/test.html">
+            
+                <a href="../serviceinfo/test.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    阿里测试环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../serviceinfo/dev.html">
+            
+                <a href="../serviceinfo/dev.html">
+            
+                    
+                        <b>1.7.3.</b>
+                    
+                    测试CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Kafka的使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;springboot-&#x6574;&#x5408;-&#x6D88;&#x606F;&#x4E2D;&#x95F4;&#x4EF6;kafka"><b>1. </b>&#x4F7F;&#x7528;SpringBoot &#x6574;&#x5408; &#x6D88;&#x606F;&#x4E2D;&#x95F4;&#x4EF6;Kafka</a></li><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b>1.1. </b>&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#&#x4F7F;&#x7528;&#x573A;&#x666F;"><b>1.2. </b>&#x4F7F;&#x7528;&#x573A;&#x666F;</a></li><li><span class="title-icon "></span><a href="#kafka&#x4E3B;&#x8981;&#x7279;&#x70B9;"><b>1.3. </b>Kafka&#x4E3B;&#x8981;&#x7279;&#x70B9;</a></li><li><span class="title-icon "></span><a href="#springboot-&#x96C6;&#x6210;kafka"><b>1.4. </b>SpringBoot &#x96C6;&#x6210;Kafka</a></li></ul></ul></div><a href="#&#x4F7F;&#x7528;springboot-&#x6574;&#x5408;-&#x6D88;&#x606F;&#x4E2D;&#x95F4;&#x4EF6;kafka" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x4F7F;&#x7528;springboot-&#x6574;&#x5408;-&#x6D88;&#x606F;&#x4E2D;&#x95F4;&#x4EF6;kafka"><a name="&#x4F7F;&#x7528;springboot-&#x6574;&#x5408;-&#x6D88;&#x606F;&#x4E2D;&#x95F4;&#x4EF6;kafka" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;springboot-&#x6574;&#x5408;-&#x6D88;&#x606F;&#x4E2D;&#x95F4;&#x4EF6;kafka"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x4F7F;&#x7528;SpringBoot &#x6574;&#x5408; &#x6D88;&#x606F;&#x4E2D;&#x95F4;&#x4EF6;Kafka</h1>
+<h2 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x7B80;&#x4ECB;</h2>
+<p>Kafka is a distributed,partitioned,replicated commit logservice&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x7C7B;&#x4F3C;&#x4E8E;JMS&#x7684;&#x7279;&#x6027;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x8BBE;&#x8BA1;&#x5B9E;&#x73B0;&#x4E0A;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#xFF0C;&#x6B64;&#x5916;&#x5B83;&#x5E76;&#x4E0D;&#x662F;JMS&#x89C4;&#x8303;&#x7684;&#x5B9E;&#x73B0;&#x3002;kafka&#x5BF9;&#x6D88;&#x606F;&#x4FDD;&#x5B58;&#x65F6;&#x6839;&#x636E;Topic&#x8FDB;&#x884C;&#x5F52;&#x7C7B;&#xFF0C;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x8005;&#x6210;&#x4E3A;Producer,&#x6D88;&#x606F;&#x63A5;&#x53D7;&#x8005;&#x6210;&#x4E3A;Consumer,&#x6B64;&#x5916;kafka&#x96C6;&#x7FA4;&#x6709;&#x591A;&#x4E2A;kafka&#x5B9E;&#x4F8B;&#x7EC4;&#x6210;&#xFF0C;&#x6BCF;&#x4E2A;&#x5B9E;&#x4F8B;(server)&#x6210;&#x4E3A;broker&#x3002;&#x65E0;&#x8BBA;&#x662F;kafka&#x96C6;&#x7FA4;&#xFF0C;&#x8FD8;&#x662F;producer&#x548C;consumer&#x90FD;&#x4F9D;&#x8D56;&#x4E8E;zookeeper&#x6765;&#x4FDD;&#x8BC1;&#x7CFB;&#x7EDF;&#x53EF;&#x7528;&#x6027;&#x96C6;&#x7FA4;&#x4FDD;&#x5B58;&#x4E00;&#x4E9B;meta&#x4FE1;&#x606F;&#x3002;</p>
+<p><img src="http://kafka.apache.org/images/kafka_diagram.png" alt="kafka-img"></p>
+<h2 id="&#x4F7F;&#x7528;&#x573A;&#x666F;"><a name="&#x4F7F;&#x7528;&#x573A;&#x666F;" class="anchor-navigation-ex-anchor" href="#&#x4F7F;&#x7528;&#x573A;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x4F7F;&#x7528;&#x573A;&#x666F;</h2>
+<h2 id="kafka&#x4E3B;&#x8981;&#x7279;&#x70B9;"><a name="kafka&#x4E3B;&#x8981;&#x7279;&#x70B9;" class="anchor-navigation-ex-anchor" href="#kafka&#x4E3B;&#x8981;&#x7279;&#x70B9;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. Kafka&#x4E3B;&#x8981;&#x7279;&#x70B9;</h2>
+<ol>
+<li>&#x540C;&#x65F6;&#x4E3A;&#x53D1;&#x5E03;&#x548C;&#x8BA2;&#x9605;&#x63D0;&#x4F9B;&#x9AD8;&#x541E;&#x5410;&#x91CF;&#x3002;&#x636E;&#x4E86;&#x89E3;&#xFF0C;Kafka&#x6BCF;&#x79D2;&#x53EF;&#x4EE5;&#x751F;&#x4EA7;&#x7EA6;25&#x4E07;&#x6D88;&#x606F;&#xFF08;50 MB&#xFF09;&#xFF0C;&#x6BCF;&#x79D2;&#x5904;&#x7406;55&#x4E07;&#x6D88;&#x606F;&#xFF08;110 MB&#xFF09;&#x3002;</li>
+<li>&#x53EF;&#x8FDB;&#x884C;&#x6301;&#x4E45;&#x5316;&#x64CD;&#x4F5C;&#x3002;&#x5C06;&#x6D88;&#x606F;&#x6301;&#x4E45;&#x5316;&#x5230;&#x78C1;&#x76D8;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x7528;&#x4E8E;&#x6279;&#x91CF;&#x6D88;&#x8D39;&#xFF0C;&#x4F8B;&#x5982;ETL&#xFF0C;&#x4EE5;&#x53CA;&#x5B9E;&#x65F6;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x3002;&#x901A;&#x8FC7;&#x5C06;&#x6570;&#x636E;&#x6301;&#x4E45;&#x5316;&#x5230;&#x786C;&#x76D8;&#x4EE5;&#x53CA;replication&#x9632;&#x6B62;&#x6570;&#x636E;&#x4E22;&#x5931;&#x3002;</li>
+<li>&#x5206;&#x5E03;&#x5F0F;&#x7CFB;&#x7EDF;&#xFF0C;&#x6613;&#x4E8E;&#x5411;&#x5916;&#x6269;&#x5C55;&#x3002;&#x6240;&#x6709;&#x7684;producer&#x3001;broker&#x548C;consumer&#x90FD;&#x4F1A;&#x6709;&#x591A;&#x4E2A;&#xFF0C;&#x5747;&#x4E3A;&#x5206;&#x5E03;&#x5F0F;&#x7684;&#x3002;&#x65E0;&#x9700;&#x505C;&#x673A;&#x5373;&#x53EF;&#x6269;&#x5C55;&#x673A;&#x5668;&#x3002;</li>
+<li>&#x6D88;&#x606F;&#x88AB;&#x5904;&#x7406;&#x7684;&#x72B6;&#x6001;&#x662F;&#x5728;consumer&#x7AEF;&#x7EF4;&#x62A4;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7531;server&#x7AEF;&#x7EF4;&#x62A4;&#x3002;&#x5F53;&#x5931;&#x8D25;&#x65F6;&#x80FD;&#x81EA;&#x52A8;&#x5E73;&#x8861;&#x3002;</li>
+<li>&#x652F;&#x6301;online&#x548C;offline&#x7684;&#x573A;&#x666F;&#x3002;</li>
+</ol>
+<h2 id="springboot-&#x96C6;&#x6210;kafka"><a name="springboot-&#x96C6;&#x6210;kafka" class="anchor-navigation-ex-anchor" href="#springboot-&#x96C6;&#x6210;kafka"><i class="fa fa-link" aria-hidden="true"></i></a>1.4. SpringBoot &#x96C6;&#x6210;Kafka</h2>
+<p>&#x6DFB;&#x52A0;kafka starter&#x4F9D;&#x8D56;</p>
+<pre class="language-"><code class="lang-xml">        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>cn.com.siss<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>spring-boot-starter-kafka<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>${starters.version}<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>&#x6DFB;&#x52A0;kafka&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">spring</span><span class="token punctuation">:</span>
+  <span class="token key atrule">profiles</span><span class="token punctuation">:</span>
+    <span class="token key atrule">include</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> kafka
+</code></pre>
+<p>&#x53D1;&#x9001;&#x6D88;&#x606F; &#x6CE8;&#x518C;<code>kafkaTemplate</code> <code>kafkaTemplate.send(&quot;message&quot;, &quot;hello-world&quot;)</code></p>
+<pre class="language-"><code class="lang-java">    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> <span class="token class-name">KafkaTemplate</span> kafkaTemplate<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@RequestMapping</span><span class="token punctuation">(</span>value <span class="token operator">=</span> <span class="token string">&quot;/sendKafka&quot;</span><span class="token punctuation">,</span> method <span class="token operator">=</span> <span class="token class-name">RequestMethod</span><span class="token punctuation">.</span>GET<span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token class-name">Object</span> <span class="token function">sendKafka</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;sendKafka&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token class-name">ListenableFuture</span> result <span class="token operator">=</span> kafkaTemplate<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">&quot;message&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;hello-world&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6D88;&#x606F;&#x63A5;&#x53D7;&#x8005;</p>
+<pre class="language-"><code class="lang-java"><span class="token annotation punctuation">@Component</span>
+<span class="token annotation punctuation">@Slf4j</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Hellokafka</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@KafkaListener</span><span class="token punctuation">(</span>topics <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token string">&quot;message&quot;</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">getMessage</span><span class="token punctuation">(</span><span class="token class-name">ConsumerRecord</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">,</span> <span class="token operator">?</span><span class="token punctuation">&gt;</span></span> record<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Optional</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token operator">?</span><span class="token punctuation">&gt;</span></span> kafkaMessage <span class="token operator">=</span> <span class="token class-name">Optional</span><span class="token punctuation">.</span><span class="token function">ofNullable</span><span class="token punctuation">(</span>record<span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>kafkaMessage<span class="token punctuation">.</span><span class="token function">isPresent</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+            <span class="token class-name">Object</span> message <span class="token operator">=</span> kafkaMessage<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&quot;----------------- record =&quot;</span> <span class="token operator">+</span> record<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            log<span class="token punctuation">.</span><span class="token function">info</span><span class="token punctuation">(</span><span class="token string">&quot;------------------ message =&quot;</span> <span class="token operator">+</span> message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6548;&#x679C;&#x5982;&#x4E0B;</p>
+<pre class="language-"><code>sendKafka
+2019-02-28 17:20:07.013  INFO 10477 --- [nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values:
+2019-02-28 17:20:07.020  INFO 10477 --- [nio-8081-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values:
+2019-02-28 17:20:07.020  INFO 10477 --- [nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.0.1
+2019-02-28 17:20:07.020  INFO 10477 --- [nio-8081-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : a7a17cdec9eaa6c5
+2019-02-28 17:20:07.398  INFO 10477 --- [afka-listener-1] cn.com.siss.web.kafka.Hellokafka         : ----------------- record =ConsumerRecord(topic = message, partition = 0, offset = 85, CreateTime = 1551345607273, checksum = 3403921507, serialized key size = -1, serialized value size = 11, key = null, value = hello-world)
+2019-02-28 17:20:07.398  INFO 10477 --- [afka-listener-1] cn.com.siss.web.kafka.Hellokafka         : ------------------ message =hello-world
+2019-02-28 17:20:07.434  WARN 10477 --- [nio-8081-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Failed to write HTTP message: org.springframework.http.converter.HttpMessageNotWritableException: Could not write JSON: No serializer found for class org.apache.kafka.clients.producer.ProducerRecord and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS); nested exception is com.fasterxml.jackson.databind.JsonMappingException: No serializer found for class org.apache.kafka.clients.producer.ProducerRecord and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: org.springframework.kafka.support.SendResult[&quot;producerRecord&quot;])
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="mybatis-plus.html" class="navigation navigation-prev " aria-label="Previous page: Mybatis-plus的使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rabiit.html" class="navigation navigation-next " aria-label="Next page: RabbitMQ的使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Kafka的使用","level":"1.3.4","depth":2,"next":{"title":"RabbitMQ的使用","level":"1.3.5","depth":2,"path":"basics/rabiit.md","ref":"basics/rabiit.md","articles":[]},"previous":{"title":"Mybatis-plus的使用","level":"1.3.3","depth":2,"path":"basics/mybatis-plus.md","ref":"basics/mybatis-plus.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-donate","splitter","anchor-navigation-ex","-sharing","sharing-plus","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"styles":{"website":"styles/website.css"},"github":{"url":"https://github.com/ClareChu"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["weibo","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"clare","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"思讯","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3","description":""},"file":{"path":"basics/kafka.md","mtime":"2019-08-28T16:53:46.170Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-28T17:07:01.089Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

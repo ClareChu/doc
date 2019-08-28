@@ -1,0 +1,817 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>测试驱动开发(TDD) · 思讯</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="clare">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="validate.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    基础环境搭建
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="dev.html">
+            
+                <a href="dev.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    JAVA开发环境的搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    基础平台
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="grpc.html">
+            
+                <a href="grpc.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    GRPC的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="redis.html">
+            
+                <a href="redis.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Redis的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="mybatis-plus.html">
+            
+                <a href="mybatis-plus.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Mybatis-plus的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="kafka.html">
+            
+                <a href="kafka.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    Kafka的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="rabiit.html">
+            
+                <a href="rabiit.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    RabbitMQ的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="mongo.html">
+            
+                <a href="mongo.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    MogoDB的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="sharding-jdbc.html">
+            
+                <a href="sharding-jdbc.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    Sharding-Jdbc的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    开发规范
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="mock.html">
+            
+                <a href="mock.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    测试驱动开发(TDD)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="validate.html">
+            
+                <a href="validate.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    数据校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../standard/swagger2.html">
+            
+                <a href="../standard/swagger2.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    Swagger2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../standard/logging.html">
+            
+                <a href="../standard/logging.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    日志记录及GELF的集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    帮助文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../ops/use_dns.html">
+            
+                <a href="../ops/use_dns.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    本地开发环境增加默认搜索域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    运维操作手册
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../ops/standard.html">
+            
+                <a href="../ops/standard.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    系统标准化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../ops/yum.html">
+            
+                <a href="../ops/yum.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    本地YUM源搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../ops/k8s-node.html">
+            
+                <a href="../ops/k8s-node.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    阿里云K8S主机标准化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../ops/gitlab-ci.html">
+            
+                <a href="../ops/gitlab-ci.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    GitLabCI/CD环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                        <b>1.7.</b>
+                    
+                    基础服务信息
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../serviceinfo/dev.html">
+            
+                <a href="../serviceinfo/dev.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    本地开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../serviceinfo/test.html">
+            
+                <a href="../serviceinfo/test.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    阿里测试环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../serviceinfo/dev.html">
+            
+                <a href="../serviceinfo/dev.html">
+            
+                    
+                        <b>1.7.3.</b>
+                    
+                    测试CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >测试驱动开发(TDD)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x9762;&#x5411;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;tdd&#xFF09;"><b>1. </b>&#x9762;&#x5411;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;TDD&#xFF09;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x4ECB;"><b>1.1. </b>&#x7B80;&#x4ECB;</a></li><li><span class="title-icon "></span><a href="#&#x5982;&#x4F55;&#x96C6;&#x6210;spring-boot&#x4F7F;&#x7528;-mokito-&#x6765;&#x5B8C;&#x6210;&#x654F;&#x6377;&#x5F00;&#x53D1;"><b>1.2. </b>&#x5982;&#x4F55;&#x96C6;&#x6210;Spring Boot&#x4F7F;&#x7528; Mokito &#x6765;&#x5B8C;&#x6210;&#x654F;&#x6377;&#x5F00;&#x53D1;</a></li></ul></ul></div><a href="#&#x9762;&#x5411;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;tdd&#xFF09;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x9762;&#x5411;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;tdd&#xFF09;"><a name="&#x9762;&#x5411;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;tdd&#xFF09;" class="anchor-navigation-ex-anchor" href="#&#x9762;&#x5411;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;tdd&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x9762;&#x5411;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;TDD&#xFF09;</h1>
+<h2 id="&#x7B80;&#x4ECB;"><a name="&#x7B80;&#x4ECB;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x4ECB;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x7B80;&#x4ECB;</h2>
+<p>&#x9996;&#x5148;&#x8BB2;&#x8BB2;&#x4E09;&#x4E2A;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x5206;&#x522B;&#x4EE3;&#x8868;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF1F;</p>
+<ul>
+<li><p>TDD&#xFF1A;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;Test-Driven Development&#xFF09;
+&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x662F;&#x654F;&#x6377;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x4E00;&#x9879;&#x6838;&#x5FC3;&#x5B9E;&#x8DF5;&#x548C;&#x6280;&#x672F;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x8BBE;&#x8BA1;&#x65B9;&#x6CD5;&#x8BBA;&#x3002;TDD&#x7684;&#x539F;&#x7406;&#x662F;&#x5728;&#x5F00;&#x53D1;&#x529F;&#x80FD;&#x4EE3;&#x7801;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x7F16;&#x5199;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x4EE3;&#x7801;&#xFF0C;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x786E;&#x5B9A;&#x9700;&#x8981;&#x7F16;&#x5199;&#x4EC0;&#x4E48;&#x4EA7;&#x54C1;&#x4EE3;&#x7801;&#x3002;TDD&#x7684;&#x57FA;&#x672C;&#x601D;&#x8DEF;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x6D4B;&#x8BD5;&#x6765;&#x63A8;&#x52A8;&#x6574;&#x4E2A;&#x5F00;&#x53D1;&#x7684;&#x8FDB;&#x884C;&#xFF0C;&#x4F46;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x5E76;&#x4E0D;&#x53EA;&#x662F;&#x5355;&#x7EAF;&#x7684;&#x6D4B;&#x8BD5;&#x5DE5;&#x4F5C;&#xFF0C;&#x800C;&#x662F;&#x628A;&#x9700;&#x6C42;&#x5206;&#x6790;&#xFF0C;&#x8BBE;&#x8BA1;&#xFF0C;&#x8D28;&#x91CF;&#x63A7;&#x5236;&#x91CF;&#x5316;&#x7684;&#x8FC7;&#x7A0B;&#x3002;TDD&#x9996;&#x5148;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x9700;&#x6C42;&#xFF08;&#x5BF9;&#x8C61;&#x3001;&#x529F;&#x80FD;&#x3001;&#x8FC7;&#x7A0B;&#x3001;&#x63A5;&#x53E3;&#x7B49;&#xFF09;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x7F16;&#x5199;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x6846;&#x67B6;&#x5BF9;&#x529F;&#x80FD;&#x7684;&#x8FC7;&#x7A0B;&#x548C;&#x63A5;&#x53E3;&#x8FDB;&#x884C;&#x8BBE;&#x8BA1;&#xFF0C;&#x800C;&#x6D4B;&#x8BD5;&#x6846;&#x67B6;&#x53EF;&#x4EE5;&#x6301;&#x7EED;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x3002;</p>
+</li>
+<li><p>BDD&#xFF1A;&#x884C;&#x4E3A;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;Behavior Driven Development&#xFF09;
+&#x884C;&#x4E3A;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x662F;&#x4E00;&#x79CD;&#x654F;&#x6377;&#x8F6F;&#x4EF6;&#x5F00;&#x53D1;&#x7684;&#x6280;&#x672F;&#xFF0C;&#x5B83;&#x9F13;&#x52B1;&#x8F6F;&#x4EF6;&#x9879;&#x76EE;&#x4E2D;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x3001;QA&#x548C;&#x975E;&#x6280;&#x672F;&#x4EBA;&#x5458;&#x6216;&#x5546;&#x4E1A;&#x53C2;&#x4E0E;&#x8005;&#x4E4B;&#x95F4;&#x7684;&#x534F;&#x4F5C;&#x3002;&#x4E3B;&#x8981;&#x662F;&#x4ECE;&#x7528;&#x6237;&#x7684;&#x9700;&#x6C42;&#x51FA;&#x53D1;&#xFF0C;&#x5F3A;&#x8C03;&#x7CFB;&#x7EDF;&#x884C;&#x4E3A;&#x3002;BDD&#x6700;&#x521D;&#x662F;&#x7531;Dan North&#x5728;2003&#x5E74;&#x547D;&#x540D;&#xFF0C;&#x5B83;&#x5305;&#x62EC;&#x9A8C;&#x6536;&#x6D4B;&#x8BD5;&#x548C;&#x5BA2;&#x6237;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x7B49;&#x7684;&#x6781;&#x9650;&#x7F16;&#x7A0B;&#x7684;&#x5B9E;&#x8DF5;&#xFF0C;&#x4F5C;&#x4E3A;&#x5BF9;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x7684;&#x56DE;&#x5E94;&#x3002;</p>
+</li>
+<li><p>ATDD&#xFF1A;&#x9A8C;&#x6536;&#x6D4B;&#x8BD5;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#xFF08;Acceptance Test Driven Development&#xFF09;
+ATDD &#x53EA;&#x662F;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7684;&#x804C;&#x8D23;&#xFF0C;&#x901A;&#x8FC7;&#x5355;&#x5143;&#x6D4B;&#x8BD5;&#x7528;&#x4F8B;&#x6765;&#x9A71;&#x52A8;&#x529F;&#x80FD;&#x4EE3;&#x7801;&#x7684;&#x5B9E;&#x73B0;&#x3002;&#x5728;&#x51C6;&#x5907;&#x5B9E;&#x65BD;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x6216;&#x7279;&#x6027;&#x4E4B;&#x524D;&#xFF0C;&#x9996;&#x5148;&#x56E2;&#x961F;&#x9700;&#x8981;&#x5B9A;&#x4E49;&#x51FA;&#x671F;&#x671B;&#x7684;&#x8D28;&#x91CF;&#x6807;&#x51C6;&#x548C;&#x9A8C;&#x6536;&#x7EC6;&#x5219;&#xFF0C;&#x4EE5;&#x660E;&#x786E;&#x800C;&#x4E14;&#x8FBE;&#x6210;&#x5171;&#x8BC6;&#x7684;&#x9A8C;&#x6536;&#x6D4B;&#x8BD5;&#x8BA1;&#x5212;&#xFF08;&#x5305;&#x542B;&#x4E00;&#x7CFB;&#x5217;&#x6D4B;&#x8BD5;&#x573A;&#x666F;&#xFF09;&#x6765;&#x9A71;&#x52A8;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x7684;TDD&#x5B9E;&#x8DF5;&#x548C;&#x6D4B;&#x8BD5;&#x4EBA;&#x5458;&#x7684;&#x6D4B;&#x8BD5;&#x811A;&#x672C;&#x5F00;&#x53D1;&#x3002;&#x9762;&#x5411;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#xFF0C;&#x5F3A;&#x8C03;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x7CFB;&#x7EDF;&#x4EE5;&#x53CA;&#x5982;&#x4F55;&#x68C0;&#x9A8C;&#x3002;</p>
+</li>
+</ul>
+<p>&#x4F7F;&#x7528;BDD&#x548C;ATDD&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x9700;&#x6C42;&#x548C;&#x5F00;&#x53D1;&#x8131;&#x8282;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x9996;&#x5148;&#x4ED6;&#x4EEC;&#x90FD;&#x662F;&#x4ECE;&#x7528;&#x6237;&#x7684;&#x9700;&#x6C42;&#x51FA;&#x53D1;&#xFF0C;&#x4FDD;&#x8BC1;&#x7A0B;&#x5E8F;&#x5B9E;&#x73B0;&#x6548;&#x679C;&#x4E0E;&#x7528;&#x6237;&#x9700;&#x6C42;&#x4E00;&#x81F4;&#x3002;
+&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x57FA;&#x4E8E;BDD&#x7684;&#x81EA;&#x52A8;&#x5316;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;Cucumber&#x3002;</p>
+<h2 id="&#x5982;&#x4F55;&#x96C6;&#x6210;spring-boot&#x4F7F;&#x7528;-mokito-&#x6765;&#x5B8C;&#x6210;&#x654F;&#x6377;&#x5F00;&#x53D1;"><a name="&#x5982;&#x4F55;&#x96C6;&#x6210;spring-boot&#x4F7F;&#x7528;-mokito-&#x6765;&#x5B8C;&#x6210;&#x654F;&#x6377;&#x5F00;&#x53D1;" class="anchor-navigation-ex-anchor" href="#&#x5982;&#x4F55;&#x96C6;&#x6210;spring-boot&#x4F7F;&#x7528;-mokito-&#x6765;&#x5B8C;&#x6210;&#x654F;&#x6377;&#x5F00;&#x53D1;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. &#x5982;&#x4F55;&#x96C6;&#x6210;Spring Boot&#x4F7F;&#x7528; Mokito &#x6765;&#x5B8C;&#x6210;&#x654F;&#x6377;&#x5F00;&#x53D1;</h2>
+<p>&#x73B0;&#x5728;&#x6211;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x6211;&#x4EEC;&#x5E38;&#x7528;&#x7684;<code>mvc</code>&#x6846;&#x67B6;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x64CD;&#x4F5C;&#x8C03;&#x7528;<code>mapper</code>&#x5C42;&#x6765;&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x9700;&#x8981;&#x8C03;&#x7528;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x8FD9;&#x6837;&#x4E0D;&#x662F;&#x771F;&#x6B63;&#x7684;mock&#x6D4B;&#x8BD5; &#x4F9D;&#x8D56;&#x8FC7;&#x4E8E;&#x590D;&#x6742;, &#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x5C31;&#x8981;&#x8003;&#x8651;&#x4F7F;&#x7528;<code>Mokito</code> &#x6765;mock&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x3002;</p>
+<p>service&#x5C42;</p>
+<pre class="language-"><code class="lang-java"><span class="token annotation punctuation">@Service</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">PersonService</span> <span class="token punctuation">{</span>
+
+    <span class="token annotation punctuation">@Autowired</span>
+    <span class="token keyword">private</span> <span class="token class-name">PersonDao</span> personDao<span class="token punctuation">;</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token keyword">int</span> id<span class="token punctuation">,</span> <span class="token class-name">String</span> name<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Person</span> person <span class="token operator">=</span> personDao<span class="token punctuation">.</span><span class="token function">getPerson</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>person <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token class-name">Person</span> personUpdate <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        personUpdate<span class="token punctuation">.</span><span class="token function">setId</span><span class="token punctuation">(</span>person<span class="token punctuation">.</span><span class="token function">getId</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        personUpdate<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> personDao<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span>personUpdate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">getData</span><span class="token punctuation">(</span><span class="token keyword">int</span> id<span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Person</span> person <span class="token operator">=</span> personDao<span class="token punctuation">.</span><span class="token function">getPerson</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>person <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">new</span> <span class="token class-name">Exception</span><span class="token punctuation">(</span><span class="token string">&quot;&#x62A5;&#x9519;&#x4E86;&#xFF01;&#xFF01;&#xFF01;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>dao&#x5C42;</p>
+<pre class="language-"><code class="lang-java"><span class="token keyword">public</span> <span class="token keyword">interface</span> <span class="token class-name">PersonDao</span> <span class="token punctuation">{</span>
+    <span class="token class-name">Person</span> <span class="token function">getPerson</span><span class="token punctuation">(</span><span class="token keyword">int</span> id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">boolean</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token class-name">Person</span> person<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x5B9E;&#x4F53;&#x7C7B;Person</p>
+<pre class="language-"><code class="lang-java"><span class="token annotation punctuation">@Data</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Person</span> <span class="token punctuation">{</span>
+    <span class="token keyword">private</span> <span class="token keyword">int</span> id<span class="token punctuation">;</span>
+    <span class="token keyword">private</span> <span class="token class-name">String</span> name<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x73B0;&#x5728;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x6765;&#x6D4B;&#x8BD5;&#x6211;&#x4EEC;&#x7684;service&#x5C42;</p>
+<pre class="language-"><code class="lang-java"><span class="token comment">//&#x8FD9;&#x53E5;&#x8868;&#x793A;&#x8BE5;&#x6D4B;&#x8BD5;&#x7C7B;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x5148;&#x52A0;&#x8F7D;spring&#x6846;&#x67B6;&#x6240;&#x9700;&#x7684;&#x76F8;&#x5173;&#x7C7B;&#x5E93;&#x5E76;&#x5C06;&#x6240;&#x6709;&#x6709;&#x6CE8;&#x89E3;&#x7684;&#x7C7B;&#x8FDB;&#x884C;&#x81EA;&#x52A8;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x3002;</span>
+<span class="token annotation punctuation">@RunWith</span><span class="token punctuation">(</span><span class="token class-name">SpringRunner</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span> 
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DemoTestApplicationTests</span> <span class="token punctuation">{</span>
+
+    <span class="token comment">/*&#x5728;&#x6D4B;&#x8BD5;&#x7C7B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x88AB;&#x6D4B;&#x7C7B;&#x5BF9;&#x8C61;&#x58F0;&#x660E;&#x7684;&#x65F6;&#x5019;&#x52A0;&#x4E0A;@InjectMocks&#xFF0C;&#x8FD9;&#x4E2A;&#x6CE8;&#x89E3;&#x4ECE;&#x540D;&#x5B57;
+    &#x4E5F;&#x5F88;&#x597D;&#x7406;&#x89E3;&#xFF0C;&#x5C31;&#x662F;&#x5C06;&#x6240;&#x6709;&#x7684;mock&#x7C7B;&#x6CE8;&#x5165;&#x5230;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x5B9E;&#x4F8B;&#x4E2D;&#xFF0C;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x5BF9;APMInfoService&#x7684;&#x521B;&#x5EFA;&#x5FC5;&#x987B;&#x8981;&#x901A;&#x8FC7;new&#x6765;&#x521D;&#x59CB;
+    &#x5316;&#xFF0C;&#x4E0D;&#x80FD;&#x50CF;@Autowired&#x90A3;&#x6837;&#x9760;spring&#x81EA;&#x52A8;&#x6CE8;&#x5165;&#x4F9D;&#x8D56;&#x7C7B;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x91CC;APMInfoService&#x5185;&#x90E8;&#x4F9D;&#x8D56;&#x7684;&#x7C7B;&#x90FD;&#x662F;Mock&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x5FC5;
+    &#x987B;&#x8981;&#x663E;&#x5F0F;&#x521B;&#x5EFA;&#x7C7B;&#x5B9E;&#x4F8B;Mockito&#x624D;&#x80FD;&#x6CE8;&#x5165;&#x6210;&#x529F;&#x3002;&#x8FD9;&#x6837;&#x4F60;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#x5728;&#x4E0B;&#x9762;&#x6D4B;&#x8BD5;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x7684;&#x65F6;&#x5019;&#x88AB;&#x6D4B;&#x7C7B;&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x662F;null&#x4E86;&#x3002;
+    */</span>
+
+  <span class="token annotation punctuation">@InjectMocks</span>
+  <span class="token keyword">private</span> <span class="token class-name">PersonService</span> personService <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PersonService</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+  <span class="token annotation punctuation">@Mock</span>
+  <span class="token keyword">private</span> <span class="token class-name">PersonDao</span> personDao<span class="token punctuation">;</span>
+
+  <span class="token annotation punctuation">@Before</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">beforeUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token class-name">Person</span> person <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      person<span class="token punctuation">.</span><span class="token function">setId</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      person<span class="token punctuation">.</span><span class="token function">setName</span><span class="token punctuation">(</span><span class="token string">&quot;chulei&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">when</span><span class="token punctuation">(</span>personDao<span class="token punctuation">.</span><span class="token function">getPerson</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">thenReturn</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token comment">//when().thenThrow(Exception.class);</span>
+      <span class="token function">when</span><span class="token punctuation">(</span>personDao<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span>person<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">thenReturn</span><span class="token punctuation">(</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token annotation punctuation">@Test</span>
+  <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">update</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+     <span class="token class-name">Boolean</span> flag <span class="token operator">=</span> personService<span class="token punctuation">.</span><span class="token function">update</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">&quot;chulei&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token class-name">Assert</span><span class="token punctuation">.</span><span class="token function">assertEquals</span><span class="token punctuation">(</span>flag<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">verify</span><span class="token punctuation">(</span>personDao<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getPerson</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+<span class="token punctuation">}</span>
+</code></pre>
+<p>&#x6D4B;&#x8BD5;controller&#x7C7B;</p>
+<pre class="language-"><code class="lang-java">
+<span class="token annotation punctuation">@WebAppConfiguration</span>
+<span class="token annotation punctuation">@Transactional</span> <span class="token comment">//&#x652F;&#x6301;&#x6570;&#x636E;&#x56DE;&#x6EDA;&#xFF0C;&#x907F;&#x514D;&#x6D4B;&#x8BD5;&#x6570;&#x636E;&#x6C61;&#x67D3;&#x73AF;&#x5883;</span>
+<span class="token annotation punctuation">@RunWith</span><span class="token punctuation">(</span><span class="token class-name">SpringRunner</span><span class="token punctuation">.</span><span class="token keyword">class</span><span class="token punctuation">)</span>
+<span class="token annotation punctuation">@SpringBootTest</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">DemoTestApplicationTests</span> <span class="token punctuation">{</span>
+  <span class="token annotation punctuation">@Autowired</span>
+  <span class="token keyword">private</span> <span class="token class-name">WebApplicationContext</span> wac<span class="token punctuation">;</span>
+
+  <span class="token keyword">private</span> <span class="token class-name">MockMvc</span> mockMvc<span class="token punctuation">;</span>
+
+    <span class="token annotation punctuation">@Before</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        mockMvc <span class="token operator">=</span> <span class="token class-name">MockMvcBuilders</span><span class="token punctuation">.</span><span class="token function">webAppContextSetup</span><span class="token punctuation">(</span>wac<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+  <span class="token annotation punctuation">@Test</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">sub</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">throws</span> <span class="token class-name">Exception</span> <span class="token punctuation">{</span>
+
+          <span class="token class-name">String</span> result <span class="token operator">=</span> mockMvc<span class="token punctuation">.</span><span class="token function">perform</span><span class="token punctuation">(</span>
+                  <span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;/api/order&quot;</span><span class="token punctuation">)</span>
+                          <span class="token punctuation">.</span><span class="token function">param</span><span class="token punctuation">(</span><span class="token string">&quot;pageNum&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span>
+                          <span class="token punctuation">.</span><span class="token function">param</span><span class="token punctuation">(</span><span class="token string">&quot;pageSize&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;10&quot;</span><span class="token punctuation">)</span>
+                          <span class="token punctuation">.</span><span class="token function">param</span><span class="token punctuation">(</span><span class="token string">&quot;status&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;1&quot;</span><span class="token punctuation">)</span>
+                          <span class="token punctuation">.</span><span class="token function">contentType</span><span class="token punctuation">(</span><span class="token class-name">MediaType</span><span class="token punctuation">.</span>APPLICATION_JSON_UTF8<span class="token punctuation">)</span><span class="token punctuation">)</span>
+                  <span class="token punctuation">.</span><span class="token function">andExpect</span><span class="token punctuation">(</span><span class="token function">status</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">isOk</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                  <span class="token punctuation">.</span><span class="token function">andExpect</span><span class="token punctuation">(</span><span class="token function">jsonPath</span><span class="token punctuation">(</span><span class="token string">&quot;$.code&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">value</span><span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+                  <span class="token punctuation">.</span><span class="token function">andReturn</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getResponse</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getContentAsString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="validate.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 数据校验">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"测试驱动开发(TDD)","level":"1.4.1","depth":2,"next":{"title":"数据校验","level":"1.4.2","depth":2,"path":"basics/validate.md","ref":"basics/validate.md","articles":[]},"previous":{"title":"开发规范","level":"1.4","depth":1,"ref":"","articles":[{"title":"测试驱动开发(TDD)","level":"1.4.1","depth":2,"path":"basics/mock.md","ref":"basics/mock.md","articles":[]},{"title":"数据校验","level":"1.4.2","depth":2,"path":"basics/validate.md","ref":"basics/validate.md","articles":[]},{"title":"Swagger2","level":"1.4.3","depth":2,"path":"standard/swagger2.md","ref":"standard/swagger2.md","articles":[]},{"title":"日志记录及GELF的集成","level":"1.4.4","depth":2,"path":"standard/logging.md","ref":"standard/logging.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["github","-donate","splitter","anchor-navigation-ex","-sharing","sharing-plus","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"styles":{"website":"styles/website.css"},"github":{"url":"https://github.com/ClareChu"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["weibo","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"clare","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"思讯","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3","description":""},"file":{"path":"basics/mock.md","mtime":"2019-08-28T16:53:46.170Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-28T17:07:01.089Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

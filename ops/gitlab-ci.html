@@ -1,0 +1,836 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>GitLabCI/CD环境搭建 · 思讯</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="clare">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="k8s-node.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                        <b>1.2.</b>
+                    
+                    基础环境搭建
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../basics/dev.html">
+            
+                <a href="../basics/dev.html">
+            
+                    
+                        <b>1.2.1.</b>
+                    
+                    JAVA开发环境的搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../basics/git.html">
+            
+                <a href="../basics/git.html">
+            
+                    
+                        <b>1.2.2.</b>
+                    
+                    Git的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    基础平台
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../basics/grpc.html">
+            
+                <a href="../basics/grpc.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    GRPC的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../basics/redis.html">
+            
+                <a href="../basics/redis.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Redis的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../basics/mybatis-plus.html">
+            
+                <a href="../basics/mybatis-plus.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Mybatis-plus的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../basics/kafka.html">
+            
+                <a href="../basics/kafka.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    Kafka的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../basics/rabiit.html">
+            
+                <a href="../basics/rabiit.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    RabbitMQ的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../basics/mongo.html">
+            
+                <a href="../basics/mongo.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    MogoDB的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../basics/sharding-jdbc.html">
+            
+                <a href="../basics/sharding-jdbc.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    Sharding-Jdbc的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                        <b>1.4.</b>
+                    
+                    开发规范
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../basics/mock.html">
+            
+                <a href="../basics/mock.html">
+            
+                    
+                        <b>1.4.1.</b>
+                    
+                    测试驱动开发(TDD)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../basics/validate.html">
+            
+                <a href="../basics/validate.html">
+            
+                    
+                        <b>1.4.2.</b>
+                    
+                    数据校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../standard/swagger2.html">
+            
+                <a href="../standard/swagger2.html">
+            
+                    
+                        <b>1.4.3.</b>
+                    
+                    Swagger2
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../standard/logging.html">
+            
+                <a href="../standard/logging.html">
+            
+                    
+                        <b>1.4.4.</b>
+                    
+                    日志记录及GELF的集成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                        <b>1.5.</b>
+                    
+                    帮助文档
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="use_dns.html">
+            
+                <a href="use_dns.html">
+            
+                    
+                        <b>1.5.1.</b>
+                    
+                    本地开发环境增加默认搜索域
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                        <b>1.6.</b>
+                    
+                    运维操作手册
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="standard.html">
+            
+                <a href="standard.html">
+            
+                    
+                        <b>1.6.1.</b>
+                    
+                    系统标准化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="yum.html">
+            
+                <a href="yum.html">
+            
+                    
+                        <b>1.6.2.</b>
+                    
+                    本地YUM源搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="k8s-node.html">
+            
+                <a href="k8s-node.html">
+            
+                    
+                        <b>1.6.3.</b>
+                    
+                    阿里云K8S主机标准化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.4" data-path="gitlab-ci.html">
+            
+                <a href="gitlab-ci.html">
+            
+                    
+                        <b>1.6.4.</b>
+                    
+                    GitLabCI/CD环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                        <b>1.7.</b>
+                    
+                    基础服务信息
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../serviceinfo/dev.html">
+            
+                <a href="../serviceinfo/dev.html">
+            
+                    
+                        <b>1.7.1.</b>
+                    
+                    本地开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../serviceinfo/test.html">
+            
+                <a href="../serviceinfo/test.html">
+            
+                    
+                        <b>1.7.2.</b>
+                    
+                    阿里测试环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../serviceinfo/dev.html">
+            
+                <a href="../serviceinfo/dev.html">
+            
+                    
+                        <b>1.7.3.</b>
+                    
+                    测试CI/CD
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >GitLabCI/CD环境搭建</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#gitlab-cicd&#x73AF;&#x5883;&#x642D;&#x5EFA;"><b>1. </b>GitLab CI/CD&#x73AF;&#x5883;&#x642D;&#x5EFA;</a></li><ul><li><span class="title-icon "></span><a href="#&#x7B80;&#x8FF0;"><b>1.1. </b>&#x7B80;&#x8FF0;</a></li><li><span class="title-icon "></span><a href="#gitlab-runner&#x5B89;&#x88C5;"><b>1.2. </b>Gitlab Runner&#x5B89;&#x88C5;</a></li><ul><li><span class="title-icon "></span><a href="#gitlab-runner&#x7C7B;&#x578B;"><b>1.2.1. </b>GitLab Runner&#x7C7B;&#x578B;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x4FE1;&#x606F;"><b>1.2.2. </b>&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x4FE1;&#x606F;</a></li><li><span class="title-icon "></span><a href="#&#x7F16;&#x5199;&#x670D;&#x52A1;&#x6587;&#x4EF6;"><b>1.2.3. </b>&#x7F16;&#x5199;&#x670D;&#x52A1;&#x6587;&#x4EF6;</a></li></ul><li><span class="title-icon "></span><a href="#gitlab&#x914D;&#x7F6E;"><b>1.3. </b>GitLab&#x914D;&#x7F6E;</a></li></ul></ul></div><a href="#gitlab-cicd&#x73AF;&#x5883;&#x642D;&#x5EFA;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="gitlab-cicd&#x73AF;&#x5883;&#x642D;&#x5EFA;"><a name="gitlab-cicd&#x73AF;&#x5883;&#x642D;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#gitlab-cicd&#x73AF;&#x5883;&#x642D;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>1. GitLab CI/CD&#x73AF;&#x5883;&#x642D;&#x5EFA;</h1>
+<h2 id="&#x7B80;&#x8FF0;"><a name="&#x7B80;&#x8FF0;" class="anchor-navigation-ex-anchor" href="#&#x7B80;&#x8FF0;"><i class="fa fa-link" aria-hidden="true"></i></a>1.1. &#x7B80;&#x8FF0;</h2>
+<p>GitLab&#x73B0;&#x5DF2;&#x96C6;&#x6210;CI/CD&#x529F;&#x80FD;&#x3002;&#x9ED8;&#x8BA4;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x90FD;&#x4F1A;&#x81EA;&#x52A8;&#x542F;&#x7528;CI/CD&#x529F;&#x80FD;&#x3002;&#x4F46;&#x8981;&#x4F7F;&#x7528;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x914D;&#x5408;Gitlab-Runner&#x624D;&#x53EF;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x3002;Gitlab&#x53EA;&#x662F;&#x5C06;&#x5177;&#x4F53;&#x5DE5;&#x4F5C;&#x4EA4;&#x7ED9;Gitlab-Runner.</p>
+<h2 id="gitlab-runner&#x5B89;&#x88C5;"><a name="gitlab-runner&#x5B89;&#x88C5;" class="anchor-navigation-ex-anchor" href="#gitlab-runner&#x5B89;&#x88C5;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2. Gitlab Runner&#x5B89;&#x88C5;</h2>
+<h3 id="gitlab-runner&#x7C7B;&#x578B;"><a name="gitlab-runner&#x7C7B;&#x578B;" class="anchor-navigation-ex-anchor" href="#gitlab-runner&#x7C7B;&#x578B;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.1. GitLab Runner&#x7C7B;&#x578B;</h3>
+<ul>
+<li><p>&#x5171;&#x4EAB;GitLab Runner</p>
+<p>&#x5171;&#x4EAB;&#x7684;&#x53EF;&#x4EE5;&#x770B;&#x6210;&#x662F;&#x5168;&#x5C40;&#x7684;&#xFF0C;&#x6240;&#x6709;&#x9879;&#x76EE;&#x90FD;&#x53EF;&#x4F7F;&#x7528;</p>
+</li>
+<li><p>&#x9879;&#x76EE;GitLab Runner</p>
+<p> &#x53EA;&#x8FD0;&#x884C;&#x6307;&#x5B9A;&#x9879;&#x76EE;&#x7684;CI/CD&#x5DE5;&#x4F5C;&#x3002;</p>
+</li>
+</ul>
+<h3 id="&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x4FE1;&#x606F;"><a name="&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.2. &#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x4FE1;&#x606F;</h3>
+<p>&#x4EE5;&#x7BA1;&#x7406;&#x5458;&#x8EAB;&#x4EFD;&#x8FDB;&#x5165;GitLab&#x63A7;&#x5236;&#x53F0;&#xFF0C;&#x8FDB;&#x5165;&quot;&#x7BA1;&#x7406;&#x4E2D;&#x5FC3;&quot; ---&gt; &quot;&#x6982;&#x89C8;&quot; ---&gt; &quot;Runnner&quot;&#x83DC;&#x5355;&#xFF0C;&#x83B7;&#x53D6;&#x6CE8;&#x518C;&#x5730;&#x5740;&#x4E0E;&#x6CE8;&#x518C;Token
+<img src="img/add_runner.jpg" alt="&#x83B7;&#x53D6;GitlabRunnerToken">
+&#x6709;&#x4E86;&#x4EE5;&#x4E0A;&#x4FE1;&#x606F;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x4E00;&#x4E2A;Docker-compose&#x6587;&#x4EF6;&#xFF0C;&#x6765;&#x542F;&#x52A8;GitLab Runner&#x4E86;&#x3002;</p>
+<h3 id="&#x7F16;&#x5199;&#x670D;&#x52A1;&#x6587;&#x4EF6;"><a name="&#x7F16;&#x5199;&#x670D;&#x52A1;&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#&#x7F16;&#x5199;&#x670D;&#x52A1;&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>1.2.3. &#x7F16;&#x5199;&#x670D;&#x52A1;&#x6587;&#x4EF6;</h3>
+<p>docker-compose.yaml</p>
+<pre class="language-"><code class="lang-yaml"><span class="token key atrule">gitlab-runner</span><span class="token punctuation">:</span>
+  <span class="token key atrule">container_name</span><span class="token punctuation">:</span> gitlab<span class="token punctuation">-</span>runner
+  <span class="token key atrule">image</span><span class="token punctuation">:</span> gitlab/gitlab<span class="token punctuation">-</span>runner<span class="token punctuation">:</span>latest
+  <span class="token key atrule">restart</span><span class="token punctuation">:</span> always
+  <span class="token key atrule">net</span><span class="token punctuation">:</span> <span class="token string">&quot;host&quot;</span>
+  <span class="token key atrule">privileged</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+  <span class="token key atrule">volumes</span><span class="token punctuation">:</span>
+    <span class="token comment"># &#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6301;&#x4E45;&#x5316;</span>
+    <span class="token punctuation">-</span> ./config.toml<span class="token punctuation">:</span>/etc/gitlab<span class="token punctuation">-</span>runner/config.toml<span class="token punctuation">:</span>rw
+    <span class="token comment"># &#x56E0;&#x4E3A;&#x4F7F;&#x7528;Docker&#x91CC;&#x9762;&#x8FD0;&#x884C;Docker,&#x6302;&#x8F7D;&#x8FDB;&#x53BB;</span>
+    <span class="token punctuation">-</span> /var/run/docker.sock<span class="token punctuation">:</span>/var/run/docker.sock
+</code></pre>
+<p>&#x7F16;&#x5199;&#x597D;&#x540E;&#xFF0C;&#x542F;&#x52A8;Gitlab Runner</p>
+<pre class="language-"><code class="lang-bash">docker-compose up -d
+<span class="token comment"># &#x8FDB;&#x5165;&#x5BB9;&#x5668;&#x540E;&#xFF0C;&#x5728;&#x5BB9;&#x5668;&#x91CC;&#x9762;&#x6267;&#x884C;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#xFF0C;&#x8FDB;&#x5165;&#x6CE8;&#x518C;</span>
+gitlab-runner register -n <span class="token punctuation">\</span>
+   --url https://URL/ <span class="token punctuation">\</span>
+   --registration-token Token <span class="token punctuation">\</span>
+   --executor docker <span class="token punctuation">\</span>
+   --description <span class="token string">&quot;MySQLTest Runner&quot;</span> <span class="token punctuation">\</span>
+   --docker-image <span class="token string">&quot;docker:stable&quot;</span> <span class="token punctuation">\</span>
+   --docker-privileged
+</code></pre>
+<p>&#x6CE8;&#x518C;&#x6210;&#x529F;&#x540E;&#xFF0C;&#x4F1A;&#x53D1;&#x73B0;config.toml&#x6587;&#x4EF6;&#x6709;&#x76F8;&#x5E94;&#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x6839;&#x636E;&#x5B9E;&#x9645;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x8C03;&#x6574;</p>
+<p>config.toml</p>
+<pre class="language-"><code class="lang-yaml"><span class="token comment"># &#x5B8C;&#x6574;&#x53EF;&#x7528;&#x914D;&#x7F6E;&#x9879;</span>
+<span class="token comment"># https://docs.gitlab.com/runner/configuration/advanced-configuration.html</span>
+<span class="token comment"># &#x5E76;&#x53D1;&#x9650;&#x5236;&#xFF0C;&#x9650;&#x5236;&#x540C;&#x65F6;&#x5DE5;&#x4F5C;&#x7684;&#x6570;&#x91CF;</span>
+concurrent = 100
+check_interval = 0
+
+<span class="token punctuation">[</span>session_server<span class="token punctuation">]</span>
+  session_timeout = 1800
+
+<span class="token punctuation">[</span><span class="token punctuation">[</span>runners<span class="token punctuation">]</span><span class="token punctuation">]</span>
+  name = &quot;MySQLTest Runner&quot;
+  <span class="token comment"># &#x6CE8;&#x518C;&#x540E;&#x7684;URL&#xFF0C;&#x4E0D;&#x8981;&#x4FEE;&#x6539;</span>
+  url = &quot;URL&quot;
+  <span class="token comment"># &#x8BE5;Token&#x662F;&#x6CE8;&#x518C;&#x540E;&#x7684;Token,&#x4E0D;&#x8981;&#x4FEE;&#x6539;</span>
+  token = &quot;TOKEN&quot;
+  <span class="token comment"># &#x6267;&#x884C;&#x5668;&#x4E3A;docker&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x6267;&#x884C;&#x5668;&#x80FD;&#x4F7F;&#x7528;&#x7684;&#x547D;&#x4EE4;&#x662F;&#x4E0D;&#x540C;&#xFF0C;&#x8BE6;&#x7EC6;&#x8981;&#x67E5;&#x770B;&#x5B98;&#x7F51;</span>
+  executor = &quot;docker&quot;
+  <span class="token comment"># &#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x53D8;&#x91CF;</span>
+  environment = <span class="token punctuation">[</span><span class="token string">&quot;ENV1=VALUE1&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;ENV2=VALUE2&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">[</span>runners.docker<span class="token punctuation">]</span>
+    tls_verify = false
+    image = &quot;docker<span class="token punctuation">:</span>stable&quot;
+    privileged = true
+    disable_entrypoint_overwrite = false
+    oom_kill_disable = false
+    disable_cache = false
+    <span class="token comment"># &#x4F5C;&#x4E1A;&#x5BB9;&#x5668;&#x7684;&#x5377;&#x6302;&#x8F7D;,&#x8FD9;&#x91CC;&#x56E0;&#x4E3A;&#x8981;&#x4F7F;&#x7528;&#x5185;&#x7F51;&#x5730;&#x5740;&#xFF0C;&#x5C06;&#x672C;&#x673A;&#x7684;HOSTS&#x6302;&#x8F7D;&#x8FDB;&#x5BB9;&#x5668;</span>
+    volumes = <span class="token punctuation">[</span><span class="token string">&quot;/cache&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;/etc/hosts:/etc/hosts:rw&quot;</span><span class="token punctuation">]</span>
+    shm_size = 0
+  <span class="token punctuation">[</span>runners.cache<span class="token punctuation">]</span>
+    <span class="token punctuation">[</span>runners.cache.s3<span class="token punctuation">]</span>
+    <span class="token punctuation">[</span>runners.cache.gcs<span class="token punctuation">]</span>
+</code></pre>
+<p>&#x5C06;GitLab Runner&#x8FD0;&#x884C;&#x8D77;&#x6765;&#x540E;&#xFF0C;&#x8FDB;&#x5165;GitLab&#x7684;&quot;&#x7BA1;&#x7406;&#x4E2D;&#x5FC3;&quot; --&gt; &quot;Runner&quot;&#x9875;&#x9762;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x6709;GitLab Runner&#x6CE8;&#x518C;&#x4E0A;&#x6765;&#x3002;
+<img src="img/runner_register.jpg" alt="Runer&#x5DF2;&#x6CE8;&#x518C;">
+&#x867D;&#x7136;GitLab Runner&#x5DF2;&#x6CE8;&#x518C;&#x4E0A;&#x6765;&#xFF0C;&#x9ED8;&#x8BA4;&#x6CE8;&#x518C;&#x4E0A;&#x6765;&#x7684;Runner&#x662F;&#x9501;&#x5B9A;&#x5230;&#x5F53;&#x524D;&#x9879;&#x76EE;&#x7684;&#x3002;&#x56E0;&#x6B64;&#x8FD8;&#x9700;&#x8981;&#x505A;&#x4E00;&#x4E9B;&#x5C0F;&#x8BBE;&#x7F6E;&#x3002;</p>
+<ul>
+<li><p>&#x53D6;&#x6D88;&#x9501;&#x5B9A;&#x5230;&#x5F53;&#x524D;&#x9879;&#x76EE;</p>
+</li>
+<li><p>&#x7ED9;&#x8BE5;GitLab Runner&#x589E;&#x52A0;&#x4E00;&#x4E2A;&#x6807;&#x7B7E;</p>
+</li>
+</ul>
+<p><img src="img/unlock_runner.jpg" alt="&#x53D6;&#x6D88;&#x9501;&#x5B9A;&#x5F53;&#x524D;&#x9879;&#x76EE;"></p>
+<h2 id="gitlab&#x914D;&#x7F6E;"><a name="gitlab&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#gitlab&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>1.3. GitLab&#x914D;&#x7F6E;</h2>
+<p>&#x5728;&#x6BCF;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x9762;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x521B;&#x5EFA;<code>.gitlab-ci.yml</code>&#x6587;&#x4EF6;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x5C31;&#x662F;&#x5B9A;&#x4E49;GitLab Runner CI/CD&#x6240;&#x8981;&#x505A;&#x7684;&#x5177;&#x4F53;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x793A;&#x4F8B;&#x6587;&#x4EF6;</p>
+<pre class="language-"><code class="lang-yaml"><span class="token comment"># &#x5B8C;&#x6574;&#x6307;&#x5357;&#xFF1A;</span>
+<span class="token comment"># https://docs.gitlab.com/ee/ci/yaml/README.html</span>
+<span class="token key atrule">variables</span><span class="token punctuation">:</span>
+  <span class="token key atrule">MAVEN_MIRROR_URL</span><span class="token punctuation">:</span> <span class="token string">&quot;http://172.18.171.113/repository/maven-public/&quot;</span>
+  <span class="token key atrule">REGISTRY</span><span class="token punctuation">:</span> <span class="token string">&quot;registry-vpc.cn-shenzhen.aliyuncs.com/siss&quot;</span>
+  <span class="token key atrule">TAG</span><span class="token punctuation">:</span> <span class="token string">&quot;0.0.7-SNAPSHOT-test&quot;</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> docker<span class="token punctuation">:</span>dind
+
+<span class="token key atrule">before_script</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> echo &quot;Befor run build&quot;
+
+<span class="token key atrule">stages</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> build
+  <span class="token punctuation">-</span> docker
+
+<span class="token key atrule">build:jar</span><span class="token punctuation">:</span>
+  <span class="token key atrule">image</span><span class="token punctuation">:</span> sissyun/base<span class="token punctuation">-</span>java
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> build
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> master
+    <span class="token punctuation">-</span> development
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> pwd &amp;&amp; mkdir tmp
+    <span class="token punctuation">-</span> mvn clean install
+    <span class="token punctuation">-</span> cp target/*.jar  tmp &amp;&amp; cd tmp
+    <span class="token punctuation">-</span> ls <span class="token punctuation">|</span> xargs <span class="token punctuation">-</span>t <span class="token punctuation">-</span>i mv <span class="token punctuation">{</span><span class="token punctuation">}</span> app.jar
+  <span class="token key atrule">artifacts</span><span class="token punctuation">:</span>
+    <span class="token key atrule">expire_in</span><span class="token punctuation">:</span> 10min
+    <span class="token key atrule">paths</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> tmp
+  <span class="token key atrule">tags</span><span class="token punctuation">:</span>
+    <span class="token comment"># &#x8BE5;TAG&#x662F;&#x8868;&#x793A;GitLab Runner&#x7684;Tag&#xFF0C;&#x5FC5;&#x987B;&#x6307;&#x5B9A;</span>
+    <span class="token punctuation">-</span> docker
+
+<span class="token key atrule">docker:info</span><span class="token punctuation">:</span>
+  <span class="token key atrule">image</span><span class="token punctuation">:</span> docker<span class="token punctuation">:</span>stable<span class="token punctuation">-</span>dind
+  <span class="token key atrule">stage</span><span class="token punctuation">:</span> docker
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> master
+    <span class="token punctuation">-</span> development
+  <span class="token key atrule">script</span><span class="token punctuation">:</span>
+     <span class="token punctuation">-</span> docker login <span class="token punctuation">-</span>u $<span class="token punctuation">{</span>DOCKER_ENV_USER<span class="token punctuation">}</span> <span class="token punctuation">-</span>p $<span class="token punctuation">{</span>DOCKER_ENV_PASS<span class="token punctuation">}</span>  $<span class="token punctuation">{</span>REGISTRY<span class="token punctuation">}</span>
+     <span class="token punctuation">-</span> echo FROM  registry<span class="token punctuation">-</span>vpc.cn<span class="token punctuation">-</span>shenzhen.aliyuncs.com/siss/base<span class="token punctuation">-</span>image<span class="token punctuation">-</span>java<span class="token punctuation">:</span>0.1 <span class="token punctuation">&gt;</span> Dockerfile
+     <span class="token punctuation">-</span> echo &apos;ENV  TZ=&quot;Asia/Shanghai&quot;  APP_OPTIONS=&quot;<span class="token punctuation">-</span>Xms128m <span class="token punctuation">-</span>Xmx512m <span class="token punctuation">-</span>Xss512k&quot;&apos; <span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span> Dockerfile
+     <span class="token punctuation">-</span> echo WORKDIR $<span class="token punctuation">{</span>APP_HOME<span class="token punctuation">:</span><span class="token punctuation">-</span>/opt/app<span class="token punctuation">-</span>root/src/<span class="token punctuation">}</span> <span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span> Dockerfile
+     <span class="token punctuation">-</span> echo COPY tmp/app.jar $<span class="token punctuation">{</span>APP_HOME<span class="token punctuation">:</span><span class="token punctuation">-</span>/opt/app<span class="token punctuation">-</span>root/src/<span class="token punctuation">}</span> <span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span> Dockerfile
+     <span class="token punctuation">-</span> echo ENTRYPOINT  <span class="token punctuation">[</span>\&quot;sh\&quot;<span class="token punctuation">,</span>\&quot;<span class="token punctuation">-</span>c\&quot;<span class="token punctuation">,</span>\&quot;java <span class="token punctuation">-</span>jar $<span class="token punctuation">{</span>APP_HOME<span class="token punctuation">:</span><span class="token punctuation">-</span>/opt/app<span class="token punctuation">-</span>root/src<span class="token punctuation">}</span>/app.jar $APP_OPTIONS\&quot;<span class="token punctuation">]</span> <span class="token punctuation">&gt;</span><span class="token punctuation">&gt;</span> Dockerfile
+     <span class="token punctuation">-</span> cat Dockerfile
+     <span class="token punctuation">-</span> export DOCKER_HOST=$<span class="token punctuation">{</span>DOCKER_PORT<span class="token punctuation">}</span>
+     <span class="token punctuation">-</span> docker build <span class="token punctuation">-</span>t $<span class="token punctuation">{</span>REGISTRY<span class="token punctuation">}</span>/$<span class="token punctuation">{</span>CI_PROJECT_NAMESPACE<span class="token punctuation">}</span>_$<span class="token punctuation">{</span>CI_PROJECT_NAME<span class="token punctuation">}</span><span class="token punctuation">:</span>$<span class="token punctuation">{</span>TAG<span class="token punctuation">}</span> .
+     <span class="token punctuation">-</span> docker push $<span class="token punctuation">{</span>REGISTRY<span class="token punctuation">}</span>/$<span class="token punctuation">{</span>CI_PROJECT_NAMESPACE<span class="token punctuation">}</span>_$<span class="token punctuation">{</span>CI_PROJECT_NAME<span class="token punctuation">}</span><span class="token punctuation">:</span>$<span class="token punctuation">{</span>TAG<span class="token punctuation">}</span>
+  <span class="token key atrule">tags</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> docker
+  <span class="token key atrule">dependencies</span><span class="token punctuation">:</span>
+    <span class="token punctuation">-</span> build<span class="token punctuation">:</span>jar
+</code></pre>
+<p>&#x4EE5;&#x4E0A;&#xFF0C;&#x6BCF;&#x5F53;&#x9879;&#x76EE;&#x6709;&#x63D0;&#x4EA4;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x89E6;&#x53D1;<code>.gitlab-ci.yml</code>&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x5DE5;&#x4F5C;&#x6D41;&#x3002;&#x53EF;&#x4EE5;&#x5728;&quot;&#x7BA1;&#x7406;&#x4E2D;&#x5FC3;&quot;---&gt;&quot;&#x4F5C;&#x4E1A;&quot;&#x4E2D;&#x770B;&#x5230;CI/CD&#x7684;&#x5DE5;&#x4F5C;&#x8BE6;&#x60C5;&#x4E0E;&#x65E5;&#x5FD7;&#x3002;</p>
+<p><img src="img/job_list.jpg" alt="&#x4F5C;&#x4E1A;&#x8BE6;&#x60C5;"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="k8s-node.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 阿里云K8S主机标准化">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"GitLabCI/CD环境搭建","level":"1.6.4","depth":2,"next":{"title":"基础服务信息","level":"1.7","depth":1,"ref":"","articles":[{"title":"本地开发环境","level":"1.7.1","depth":2,"path":"serviceinfo/dev.md","ref":"serviceinfo/dev.md","articles":[]},{"title":"阿里测试环境","level":"1.7.2","depth":2,"path":"serviceinfo/test.md","ref":"serviceinfo/test.md","articles":[]},{"title":"测试CI/CD","level":"1.7.3","depth":2,"path":"serviceinfo/dev.md","ref":"serviceinfo/dev.md","articles":[]}]},"previous":{"title":"阿里云K8S主机标准化","level":"1.6.3","depth":2,"path":"ops/k8s-node.md","ref":"ops/k8s-node.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github","-donate","splitter","anchor-navigation-ex","-sharing","sharing-plus","-highlight","prism"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-tomorrow.css"]},"styles":{"website":"styles/website.css"},"github":{"url":"https://github.com/ClareChu"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"serif","size":2},"anchor-navigation-ex":{"associatedWithSummary":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"sharing":{"qq":false,"all":["weibo","qq","qzone"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","author":"clare","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"思讯","language":"zh-hans","links":{"sidebar":{}},"gitbook":"3.2.3","description":""},"file":{"path":"ops/gitlab-ci.md","mtime":"2019-08-28T16:53:46.172Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-08-28T17:07:01.089Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
